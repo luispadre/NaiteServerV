@@ -4,7 +4,7 @@ const { connection } = require("./database/util")
 const bodyParser = require("body-parser")
 
 var path = require('path')
-const config = require('./config');
+const config = require('./config/index');
 const app = express()
 connection()
 
