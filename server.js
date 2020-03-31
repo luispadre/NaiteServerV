@@ -1,12 +1,12 @@
 const express = require("express")
 const cors = require("cors")
-const { connection } = require("./database/util")
+// const { connection } = require("./database/util")
 const bodyParser = require("body-parser")
 
 var path = require('path')
 const configuracion = require('./configuracion/VariablesEntorno');
 const app = express()
-connection()
+// connection()
 
 
 app.use(cors());
