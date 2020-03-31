@@ -1,6 +1,6 @@
 module.exports = {
     database:
-      'mongodb://root:127as127!@ds159025.mlab.com:59025/p1',
+      'mongodb+srv://luispadre:10Naaaite10@cluster0-3lrkd.mongodb.net/DevJobs?retryWrites=true',
     port: 3001,
     secret: '10Naaaite10'
   };
