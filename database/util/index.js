@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('../../config/index');
+const config = require('../../config/VariablesEntorno');
 
 module.exports.connection = async () => {
   try {
