@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const jwt = require('jsonwebtoken');
-const config = require('../config');
+const configuracion = require('../configuracion');
 
 const User = require('../database/util/models/user');
 
@@ -21,7 +21,7 @@ router.post('/signup', (req, res, next) => {
     user.save();
     var token = jwt.sign({
       user: user
-    }, config.secret, {
+    }, configuracion.secret, {
       expiresIn: '7d'
     });
     res.json({
@@ -51,7 +51,7 @@ router.post('/login', (req, res, next) => {
       } else {
         var token = jwt.sign({
           user: user
-        },config.secret , {
+        },configuracion.secret , {
           expiresIn: '7d'
         });
         res.json({

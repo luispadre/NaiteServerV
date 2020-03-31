@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const config = require('../../config/VariablesEntorno');
+const configuracion = require('../../configuracion/VariablesEntorno');
 
 module.exports.connection = async () => {
   try {
-    await mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log('Base De datos Conectada',config.database);
+    await mongoose.connect(configuracion.database, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('Base De datos Conectada',configuracion.database);
   } catch (error) {
     console.log(error,'Error :P');
     throw error;
