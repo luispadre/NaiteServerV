@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const configuracion = require('../../configuracion/VariablesEntorno');
+const configuracion = require('./../../configuracion/VariablesEntornos');
 
 module.exports.connection = async () => {
   try {
