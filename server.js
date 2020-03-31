@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, './public')));
 
 app.use("/api",  require('./routes/games'));
 app.use("/rest/api/ui",  require('./routes/Ui'));
-app.use('/api/afccounts', require('./routes/users'));
+app.use('/api/accounts', require('./routes/users'));
 var port = process.env.PORT || configuracion.port;
 
 app.listen(port, function() {
