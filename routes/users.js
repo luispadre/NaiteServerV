@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const jwt = require('jsonwebtoken');
-const config = require('../Config');
+const config = require('../config');
 
 const User = require('../database/util/models/user');
 

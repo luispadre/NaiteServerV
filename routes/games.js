@@ -2,7 +2,7 @@
 
 const router = require("express").Router();
 var request = require("request");
-const { OptionsGenerate } = require("./../Config/Options");
+const { OptionsGenerate } = require("./../config/Options");
 
 router.route("/games").get((req, res, next) => {
     console.log(OptionsGenerate({ path: "games" }))
