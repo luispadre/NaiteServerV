@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const UiSchema = new mongoose.Schema(
-  {
+
+const UiSchema = new Schema({
     what: {
       type: String,
       required: true,
@@ -19,9 +20,7 @@ const UiSchema = new mongoose.Schema(
       required: true,
     }
   },
-  {
-    timestamps: true,
-  }
 );
 
-module.exports = mongoose.model("UI", UiSchema);
+
+module.exports = mongoose.model("Ui", UiSchema);
